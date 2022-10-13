@@ -112,10 +112,8 @@ public class Main {
         }
 
         System.out.println("Задание 16");
-        int startyear = 1822;
-        int endyear = 2122;
-        for (int k = 2122; k <= 1822 + 79; k++) {
-            if (endyear % 79 == 0) {
+            for (int k = 1822; k <= 2122; k= k+79) {
+            if (k % 79 == 0 && k % 100 !=0 || k % 400==0) {
             }
                 System.out.println("Комета прилетела в этот год" + k );
             }
